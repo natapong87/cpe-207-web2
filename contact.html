@@ -42,41 +42,35 @@
 								<!-- Form -->
 									<h2>Contact</h2>
 
-									<form method="post" action="#">
+									<form method="post" action="#" id="myform">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												<input type="text" name="name" id="name" value="" placeholder="Name" class="form-control" />
 											</div>
 											
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="email" id="email" value="" placeholder="Email" class="form-control" />
 											</div>
-											<div class="col-12">
-												<input type="tel" name="tel" id="tel" value="" placeholder="Phone" />
-											</div>
+											<!-- <div class="col-12"> -->
+												<!-- <input type="tel" name="tel" id="Phone" value="" placeholder="Phone" class="form-control" /> -->
+											<!-- </div> -->
 											<!-- Break -->
 											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Subject -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
+												<input type="text" name="subject" id="subject" value="" placeholder="Subject" class="form-control" />
 											</div>
 											<!-- Break -->
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Male</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Female</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">Other</label>
-											</div>
+										<!-- <div class="col-4 col-12-small"> -->
+												<!-- <input type="radio" id="demo-priority-low" name="demo-priority" checked> -->
+												<!-- <label for="demo-priority-low">Male</label> -->
+											<!-- </div> -->
+											<!-- <div class="col-4 col-12-small"> -->
+												<!-- <input type="radio" id="demo-priority-normal" name="demo-priority"> -->
+												<!-- <label for="demo-priority-normal">Female</label> -->
+											<!-- </div> -->
+											<!-- <div class="col-4 col-12-small"> -->
+												<!-- <input type="radio" id="demo-priority-high" name="demo-priority"> -->
+												<!-- <label for="demo-priority-high">Other</label> -->
+											<!-- </div> -->
 											<!-- Break -->
 											
 											<div class="col-6 col-12-small">
@@ -85,17 +79,30 @@
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="message" id="message" placeholder="Enter your message" rows="6" class="form-control"></textarea>
 											</div>
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="submit" value="Send" class="form-control" name="submit" /></li>
 													<li><input type="reset" value="Reset" /></li>
 												</ul>
 											</div>
-										</div>
-									</form>
+											<table class="table">
+												<thead>
+												  <tr>
+													<th scope="col">Name</th>
+													<th scope="col">Subject</th>
+													<th scope="col">Email</th>
+													<th scope="col">Message</th>
+													<th scope="col"></th>
+												  </tr>
+												</thead>
+												<tbody id="list"></tbody>
+										</table>
+								</div>
+							</form>
+									
 
 									<hr />
 									
